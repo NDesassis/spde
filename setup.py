@@ -1,12 +1,12 @@
 from distutils.core import setup,Extension
 from Cython.Build import cythonize
 
-sourcefiles = ['src/spde/spde.pyx', 'src/spde/TurboOptimizer.cpp']
+sourcefiles = ['src/spde.pyx', 'src/TurboOptimizer.cpp']
 
-extensions = [Extension("spde", sourcefiles,language='c++')]
+extensions = [Extension("SPDE", sourcefiles,language='c++')]
 
 
-setup(name="spde",
+setup(name="SPDE",
 	  version="0.0.1",
 		author = 'Nicolas Desassis and Didier Renard',
 		author_email = 'nicolas.desassis@gmail.com',
