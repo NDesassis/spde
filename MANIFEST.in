@@ -1,0 +1,3 @@
+include src/spdeLogit/TurboOptimizer.hpp
+include src/spdeLogit/spde.pyx
+include pyproject.toml
